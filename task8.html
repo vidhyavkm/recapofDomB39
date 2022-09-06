@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <button on></button>
+    <!-- When user press any key in your html page show a alert that Invalid Key Pressed,  -->
+    <!-- but when user press spacebar show an alert Thank You..!! and close the current window. -->
+    <script>
+        document.addEventListener('keypress',(e)=>{
+            console.log(e)
+            console.log(e.code)
+
+            if(e.code=="Space"){
+                console.log("space bar pressed")
+                alert("Thank u!!")
+                window.close()
+            }
+            else{
+                console.log("Invalid key pressed")
+                alert("Invalid key pressed")
+            }
+        })
+    </script>
+</body>
+</html>
